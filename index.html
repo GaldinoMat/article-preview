@@ -19,9 +19,8 @@
   </head>
   <body>
     <main class="container">
-      <div class="img-container">
-        <img src="images/drawers.jpg" alt="drawers" />
-      </div>
+      <img src="images/drawers.jpg" alt="drawers" class="img-top" />
+      <div class="img-container"></div>
       <section class="text-container">
         <h1>
           Shift the overall look and feel by adding these wonderful touches to
@@ -35,27 +34,39 @@
         <div class="author-container">
           <div class="author-info">
             <img src="images/avatar-michelle.jpg" alt="avatar-michelle" />
-            <div class="text-info">
-              <h3>Michelle Appleton</h3>
+            <div class="name-date">
+              <p>Michelle Appleton</p>
               <p>28 Jun 2020</p>
             </div>
           </div>
-          <button>
-            <img src="images/icon-share.svg" alt="" />
+          <button
+            type="button"
+            class="share-button"
+            onclick="toggleSocialBar()"
+          >
+            <img
+              src="images/icon-share.svg"
+              alt="share-icon"
+              class="share-img"
+            />
           </button>
         </div>
       </section>
       <div class="social-media-container">
-        <h3>Share</h3>
-        <a href="">
-          <img src="images/icon-facebook.svg" alt="icon-facebook" />
-        </a>
-        <a href="">
-          <img src="images/icon-twitter.svg" alt="icon-twitter" />
-        </a>
-        <a href="">
-          <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
-        </a>
+        <div>
+          <p>SHARE</p>
+        </div>
+        <div class="icons-container">
+          <a href="#">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+          </a>
+          <a href="#">
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+          </a>
+          <a href="#">
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+          </a>
+        </div>
       </div>
     </main>
 
@@ -66,4 +77,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
   </body>
+  <script src="main.js"></script>
 </html>
