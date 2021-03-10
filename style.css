@@ -127,7 +127,7 @@ a {
 
 .social-media-container {
   width: 100%;
-  padding: 0.938rem 0 1.75rem 1.563rem;
+  padding: 0.938rem 0 1.65rem 1.563rem;
   background-color: var(--very-dark-grayish-blue);
   display: flex;
   align-items: center;
@@ -154,13 +154,25 @@ a {
 
 .icons-container {
   width: 35%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .icons-container .icon {
   align-self: center;
   cursor: pointer;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 @media (min-width: 768px) {
