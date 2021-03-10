@@ -158,10 +158,9 @@ a {
   justify-content: space-between;
 }
 
-.icons-container a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.icons-container .icon {
+  align-self: center;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
